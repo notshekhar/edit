@@ -1,61 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAwF8My2OEA7zuamKnnAUaad7aqzJblleg",
-    authDomain: "untxt-ed267.firebaseapp.com",
-    databaseURL: "https://untxt-ed267.firebaseio.com",
-    storageBucket: "untxt-ed267.appspot.com",
-    messagingSenderId: "632121075161"
-  };
-  firebase.initializeApp(config);
-</script>	
-<meta name="viewport" content="width-device-width">
-<link href="icons/untxt.png" rel="shortcut icon"></link>
+<link href="https://lh3.googleusercontent.com/-NMY1QAf7JXd2Y8h0pB-a5DFgv2v2gPsjZzcDUwOOA868MiMzME0mUSVBc3k8nUPhUe4hucvrld6xrtNw8wJb6NTBRgfu4Lb9upYyUavDbNWgnpk-LepO9GloAOZHd7Dj2acSSnRF-shz8DHb0jKsWFBV4vOcPgNyhBeJm_M9faV27KZ3mHGtw0vgHkak3OKMogQ2Er7WzRpeJkhSTIEWEOcgiCwM27hnkPJhDKV-FY882UIlt08zg4P4fG1mjJ84ylutl00rnvveNx1pSdJ63d2Oh166c4l5N71IYZwafOaFQUizGbyWTGg6xBjUdvArHt09E5puNjOFLUZwjM9BiSiIhSmnoRGylGKWUtKYMk6UQLcepe4_j4Tv0XQR8oycGxNtHr4uBIVgrkymn3Q0wKjytd7K9ejvG5DBuebRdXLNgDxJkF25ZfDx-UtdEzr1lKgZ_gKKfPI0Nl-H4Ap8g1zD6qrff_E2awLK2scJtieD3Z2t5xP0Ig7eqnAJIMYoutlmQbzAmHNxu63cesaxWv0Rzzb8pfJ7ZH0IQsATDNC4l8ROq9G4vac9KT3LaTV2_dzElvLas0w76whWuibsnqQGZmxc657uN623_Xv=w182-h183-no?pageId=101954368363567291924" rel="shortcut icon"></link>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script>
 $(document).ready(function(){
-//runing the codes
 $('#run').click(function(){
 var txt = $('#input').val();
 $('#output').html(txt);
 });
 });
-</script>
-<script>
-$(document).ready(function(){
-//changing mode to up
-$('#up').click(function(){
-  $('#inputdiv').css({
-
-  });
-  $('#input').css({
-
-  });
-  $('#output').css({
-
-  });
-});
-});
-</script>
-<script>
-$(document).ready(function(){
-//changing mode to down
-$('#down').click({
-$('#inputdiv').css({
-
-});
-$('#input').css({
-
-});
-$('#output').css({
-
-});
-});
-  });
 </script>
 <style>
 body {
@@ -71,25 +25,25 @@ body {
     border-color: white;
     border-style: none;
     border-radius: 4px 4px 4px 4px;
-	box-sizing: border-box;
-	border-bottom: 1px solid #e5e5e5;
+ box-sizing: border-box;
+ border-bottom: 1px solid #e5e5e5;
     line-height: 20px;
-	box-shadow: 0px 0px 0 0.9px rgba(0, 0, 0, .10);
-	outline: none;
+ box-shadow: 0px 0px 0 0.9px rgba(0, 0, 0, .10);
+ outline: none;
 
 }
 #input {
     margin-left: 10px;
     background: white;
-    width: 96%;
-    height: 495px;
+    width: 98%;
+    height: 490px;
     border-color: white;
     border-style: none;
     outline: none;
-	resize: none;
-	font-size: 15px;
-    font-family: Tahoma;
-	color: #3f4694;
+ resize: none;
+  font-size: 15px;
+  font-style: Tahoma;
+  color: #3f4694;
 }
 #output {
     position: relative;
@@ -99,143 +53,137 @@ body {
     border-color: white;
     border-style: none;
     border-radius: 4px 4px 4px 4px;
-	box-sizing: border-box;
-	border-bottom: 1px solid #e5e5e5;
+ box-sizing: border-box;
+ border-bottom: 1px solid #e5e5e5;
     line-height: 20px;
-	box-shadow: 0px 0px 0 0.9px rgba(0, 0, 0, .10);
-	outline: none;
-	overflow: scroll;
+ box-shadow: 0px 0px 0 0.9px rgba(0, 0, 0, .10);
+ outline: none;
+ margin-top: -500px;
+ margin-left:50%;
+ overflow: scroll;
 }
 #output::-webkit-scrollbar {
     width: 10px;
 }
 #output::-webkit-scrollbar-thumb {
     border-radius: 0px;
-	background: #3f4694;
+ background: #3f4694;
 }
 #input::-webkit-scrollbar {
     width: 10px;
 }
 #input::-webkit-scrollbar-thumb {
     border-radius: 0px;
-	background: #3f4694;
-}
-body::-webkit-scrollbar {
-    width: 10px;
-}
-body::-webkit-scrollbar-thumb {
-    border-radius: 0px;
-	background: #3f4694;
+ background: #3f4694;
 }
 #head {
-
+    top: 0px;
+    left: 0px;
+    z-index: 499;
     display: block;
     width: 100%;
     height: 50px;
+    margin: 0;
     background: #3f4694;
     border: 0;
 }
 #run {
     padding: 6;
-	position: relative;
+ position: relative;
     background: #42B72A;
     border: 0;
-	margin-top: 10px;
-	margin-left: 100px;
+ margin-top: 10px;
+ margin-left: 100px;
     color: white;
     width: 69px;
     border-radius: 2px;
     cursor: pointer;
-	height: 30px;
+ height: 30px;
 }
-#up {
-	background: url(icons/up.png);
-    height: 20px;
-    width: 20px;
-	content: url();
+#feed {
+ font-family: tahoma;
+ position: fixed;
+ bottom: 0px;
+ right: 50px;
+ width: 300px;
+    box-shadow: 0px 0px 0 0.9px rgba(0, 0, 0, .10);
 }
-#down {
-	background: url(icons/down.png);
-    height: 20px;
-    width: 20px;
-	content: url();
+#header {
+ background: #3f4694;
+ color: white;
+ height: 50px;
+ text-align: center;
+ text-shadow: 0 -1px rgba(0, 0, 0, .25); 
+ outline: none;
+ cursor: pointer;
 }
-#run:active {
-    background: white;
-    color: #42B72A;
+#feedback {
+ height: 300px;
+ background: white;
+ display: none;
 }
-#code .lft{
-    float: right;
-	margin-top: -501px;
+#feedback #write {
+ float: right;
 }
-#gogl {
-   margin: 30px 50px;
+#write {
+ height: 295px;
+ border: none;
+ width: 290px;
+ outline: none;
+ resize: none;
 }
-@media(max-width: 786px){
-#run {
-    padding: 6;
-	position: relative;
-    background: #42B72A;
-    border: 0;
-	margin-top: 50px;
-	margin-left: 200px;
-    color: white;
-    width: 200px;
-    border-radius: 5px;
-    cursor: pointer;
-	height: 50px;
-	font-size: 40px;
+#write::-webkit-scrollbar {
+    width: 10px;
 }
-
-#head {
-   height: 180px;	
+#write::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+ background: #3f4694;
 }
-#run:active {
-    background: white;
-    color: #42B72A;
-}
-#input {
-    font-size: 40px;   
-    height: 1295px;	
-}
-#inputdiv {
-    width: 50%;
-    height: 1300px;
-}
-#code .lft{
-    float: right;
-    width: 49.5%;
-	margin-top: -1300px;
-    font-size: 40px;
-    height: 1300px;
-}
-
+#send {
+ color: gray;
+ background: white;
+ border: none;
+ width: 300px;
+ height: 50px;
+ box-shadow: 0px 0px 0 0.9px rgba(0, 0, 0, .10);
+ outline: none;
+ cursor: pointer;
+ display: none;
 }
 </style>
-<title>try it yourself-1.0
+<title>try it yourself-1.1
 </title>
 </head>
 <body>
-<header id="head">
-	<a id="gogl" href="https://goo.gl/hiAJDH">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="33px" viewBox="0 0 30 33" version="1.1">
-    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
-    <title>Fill 6</title>
-    <desc>Created with Sketch.</desc>
-    <defs/>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="SignIn_Yahoo-Copy-28" transform="translate(-491.000000, -731.000000)" fill="#2592FC">
-            <g id="Group-4-Copy-2" transform="translate(491.000000, 731.000000)">
-                <path d="M6.0015,30 L24,30 L24,9 L27,9 L27,31.5 C27,32.328 26.3295,33 25.5015,33 L4.5015,33 C3.672,33 3,32.328 3,31.5 L3,9 L6.0015,9 L6.0015,30 Z M28.5,6 L1.5015,6 C0.672,6 0,5.328 0,4.5 C0,3.672 0.672,3 1.5015,3 L6.0015,3 L6.0015,1.5 C6.0015,0.672 6.672,0 7.5,0 L22.5,0 C23.3295,0 24,0.672 24,1.5 L24,3 L28.5,3 C29.3295,3 30,3.672 30,4.5 C30,5.328 29.3295,6 28.5,6 L28.5,6 Z" id="Fill-6"/>
-            </g>
-        </g>
-    </g>
-</svg>
-</a>
-	<input type="button" value="run" id="run">
-</header>
+<div id="head"><input type="button" value="run" id="run">
+</div>
 <div id="code"><div id="inputdiv"><textarea id="input" placeholder="// Write some HTML"></textarea></div>
-<div id="output" class="lft"></div></div>
-
+<div id="output"></div>
+</div>
+<script>
+// opening fedback
+$(document).ready(function(){
+ $('#header').click(function(){
+   $('#feedback').show(50);
+   $('#send').show(50);
+ });
+});
+</script>
+<script>
+// closing feedback
+$(document).ready(function(){
+ $('#send').click(function(){
+   $('#feedback').hide(50);
+   $('#send').hide(50);
+ });
+ 
+});
+</script>
+<div id="feed">
+<div id="header" ><br>
+feedback</div>
+<div id="feedback"><textarea id="write" placeholder="// Give feedback"></textarea></div>
+<button id="send">send feedback</button>
+</div>
 </body>
 </html>
