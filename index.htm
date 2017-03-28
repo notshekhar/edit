@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width-device-width">
 <link href="untxt.png" rel="shortcut icon"></link>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script>
 $(document).ready(function(){
+//runing the codes
 $('#run').click(function(){
 var txt = $('#input').val();
 $('#output').html(txt);
 });
-});
+
+  });
+ 
 </script>
+
 <style>
 body {
     background: #E9EBEE;
     align-items: center;
     font-family: Tahoma;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    word-wrap: break-word;
+
 }
 #inputdiv {
 
@@ -24,26 +33,27 @@ body {
     height: 500px;
     border-color: white;
     border-style: none;
-    border-radius: 4px 4px 4px 4px;
- box-sizing: border-box;
- border-bottom: 1px solid #e5e5e5;
+    border-radius: 4px 0px 0px 4px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #e5e5e5;
     line-height: 20px;
- box-shadow: 0px 0px 0 0.9px rgba(0, 0, 0, .10);
- outline: none;
+	box-shadow: 0px 0px 0 0.9px rgba(0, 0, 0, .10);
+	outline: none;
 
 }
 #input {
+    float: right;
     margin-left: 10px;
     background: white;
     width: 98%;
-    height: 490px;
+    height: 495px;
     border-color: white;
     border-style: none;
     outline: none;
- resize: none;
-  font-size: 15px;
-  font-style: Tahoma;
-  color: #3f4694;
+	resize: none;
+	font-size: 15px;
+    font-family: Tahoma;
+	color: #3f4694;
 }
 #output {
     position: relative;
@@ -52,103 +62,131 @@ body {
     height: 500px;
     border-color: white;
     border-style: none;
-    border-radius: 4px 4px 4px 4px;
- box-sizing: border-box;
- border-bottom: 1px solid #e5e5e5;
-    line-height: 20px;
- box-shadow: 0px 0px 0 0.9px rgba(0, 0, 0, .10);
- outline: none;
- margin-top: -500px;
- margin-left:50%;
- overflow: scroll;
+    border-radius: 0px 4px 4px 0px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #e5e5e5;
+    line-height: 10px;
+	box-shadow: 0px 0px 0 0.9px rgba(0, 0, 0, .10);
+	outline: none;
+	overflow: scroll;
+    padding: 5px 10px;	
 }
 #output::-webkit-scrollbar {
     width: 10px;
 }
 #output::-webkit-scrollbar-thumb {
     border-radius: 0px;
- background: #3f4694;
+	background: #3f4694;
 }
 #input::-webkit-scrollbar {
     width: 10px;
 }
 #input::-webkit-scrollbar-thumb {
     border-radius: 0px;
- background: #3f4694;
+	background: #3f4694;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+	background: #3f4694;
 }
 #head {
-    top: 0px;
-    left: 0px;
-    z-index: 499;
+
     display: block;
     width: 100%;
     height: 50px;
-    margin: 0;
     background: #3f4694;
     border: 0;
 }
 #run {
     padding: 6;
- position: relative;
+	position: relative;
     background: #42B72A;
     border: 0;
- margin-top: 10px;
- margin-left: 100px;
+	margin-top: 10px;
+	margin-left: 100px;
     color: white;
     width: 69px;
     border-radius: 2px;
     cursor: pointer;
- height: 30px;
+	height: 30px;
+	outline: none;
+}
+#up {
+	background: url(icons/up.png);
+    height: 20px;
+    width: 20px;
+	content: url();
+}
+#down {
+	background: url(icons/down.png);
+    height: 20px;
+    width: 20px;
+	content: url();
+}
+#run:active {
+    background: white;
+    color: #42B72A;
+}
+#code .lft{
+    float: right;
+	margin-top: -501px;
+}
+#gogl {
+    position: relative;
+	margin: 30px 50px;
 }
 #feed {
- font-family: tahoma;
- position: fixed;
- bottom: 0px;
- right: 50px;
- width: 300px;
+	font-family: tahoma;
+	position: fixed;
+	bottom: 0px;
+	right: 50px;
+	width: 300px;
     box-shadow: 0px 0px 0 0.9px rgba(0, 0, 0, .10);
 }
 #header {
- background: #3f4694;
- color: white;
- height: 50px;
- text-align: center;
- text-shadow: 0 -1px rgba(0, 0, 0, .25); 
- outline: none;
- cursor: pointer;
+	background: #3f4694;
+	color: white;
+	height: 50px;
+	text-align: center;
+	text-shadow: 0 -1px rgba(0, 0, 0, .25); 
+	outline: none;
+	cursor: pointer;
 }
 #feedback {
- height: 300px;
- background: white;
- display: none;
+	height: 300px;
+	background: white;
+	display: none;
 }
 #feedback #write {
- float: right;
+	float: right;
 }
 #write {
- height: 295px;
- border: none;
- width: 290px;
- outline: none;
- resize: none;
+	height: 295px;
+	border: none;
+	width: 290px;
+	outline: none;
+	resize: none;
 }
 #write::-webkit-scrollbar {
     width: 10px;
 }
 #write::-webkit-scrollbar-thumb {
     border-radius: 0px;
- background: #3f4694;
+	background: #3f4694;
 }
 #send {
- color: gray;
- background: white;
- border: none;
- width: 300px;
- height: 50px;
- box-shadow: 0px 0px 0 0.9px rgba(0, 0, 0, .10);
- outline: none;
- cursor: pointer;
- display: none;
+	color: gray;
+	background: white;
+	border: none;
+	width: 300px;
+	height: 50px;
+	box-shadow: 0px 0px 0 0.9px rgba(0, 0, 0, .10);
+	outline: none;
+	cursor: pointer;
+	display: none;
 }
 #youtube {
  position: relative;
@@ -161,6 +199,7 @@ body {
     margin-top: 10px;
     margin: 10px auto 5px auto;
     text-align: justify;
+	position: static;
 }
 @media(max-width: 786px){
 
