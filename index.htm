@@ -296,6 +296,25 @@ $('#output').html(txt);
 </title>
 </head>
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1944637195758524',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+	
 <div id="contain">
 <header id="head"><a id="gogl" href="https://goo.gl/hiAJDH">
 <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="33px" viewBox="0 0 30 33" version="1.1">
@@ -338,7 +357,12 @@ $(document).ready(function(){
 
 <div id="feed">
 <div id="header">feedback</div>
-<div id="feedback"><textarea id="write" placeholder="// Give feedback"></textarea></div>
+<div id="feedback"><textarea id="write" placeholder="// Give feedback"><div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div></textarea></div>
 <button id="send">send feedback</button>
 </div>
 </div>
