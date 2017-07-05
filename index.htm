@@ -273,19 +273,6 @@ body::-webkit-scrollbar-thumb {
 }
 }
 </style>
-<script>
-
-function color(e) {
-	if(e.value == "<html>" || e.value == "<head>"){
-		e.style.color = "green";
-	}
-    else{
-		e.style.color = "#3f4694";
-	}
-
-}
-
-</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <link href="untxt.png" rel="shortcut icon"></link>
 <script>
@@ -333,7 +320,7 @@ $('#output').html(txt);
     </g>
 </svg>
 
-</a><input type="button" value="run &prod;" id="run">
+</a><input type="button" value="run &prod;" id="run" key="run">
 </header>
 <div id="code"><div id="inputdiv"><textarea id="input" onkeyup="color(this)" placeholder="// Write some HTML">
 <!DOCTYPE html>
@@ -362,6 +349,6 @@ $('#rset').click(
 });
 </script>
 	<script src="edit.js"></script>
- <input type="button" value="reset &prod;" id="rset">
+ <input type="button" value="reset &prod;" id="rset" key="reset">
 </body>
 </html>
