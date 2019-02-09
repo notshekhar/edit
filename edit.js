@@ -5,7 +5,7 @@ let doc = output.contentWindow.document
 
 document.querySelector('#run').onclick = () => {
   let html = input.value 
-  doc.body.innerHTML = value
+  doc.body.innerHTML = html
 }
 reset.onclick = () => {
   let html = "<!DOCTYPE html>↵<html>↵<head>↵<title>↵↵</title>↵</head>↵<body>↵↵↵↵</body>↵</html>"
