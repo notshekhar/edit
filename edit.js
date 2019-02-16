@@ -8,7 +8,7 @@ document.querySelector('#run').onclick = () => {
   doc.body.innerHTML = html
 }
 reset.onclick = () => {
-  let html = "<!DOCTYPE html>↵<html>↵<head>↵<title>↵↵</title>↵</head>↵<body>↵↵↵↵</body>↵</html>"
+  let html = ""
   input.value = html
 }
 
